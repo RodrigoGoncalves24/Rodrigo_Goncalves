@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    border-radius: 1em;
+}
+
+body{
+    background-color:  #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+#calc {
+    width: 400px;
+    padding: .5em;
+    background-color: #c4c4c4;
+    color: black;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#calc h3{
+    font-size: .8em;
+    font-weight: 300;
+    color:  #666;
+
+}
+
+#operacao {
+    text-align: right;
+}
+
+
+#operacao-anterior, #operacao-posterior {
+    padding: .2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+}
+
+#operacao-anterior{
+color: #777;
+}
+
+#operacao-posterior{
+    font-size: 3em;
+    font-weight: 700;
+
+}
+
+#button-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 3px;
+}
+
+#button-container button{
+    border: 1px solid transparent;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #dbdbdb;
+    cursor: pointer;
+}
+
+#button-container .number{
+    background-color: #f3f3f3;
+}
+
+#button-container button:hover{
+    background-color: #bababa;
+    border-color: #999;
+}
+
+#button-container #equal-btn{
+    grid-column: span 2;
+    background-color:  #75a5cb;
+
+}
+
+#button-container #equal-btn:hover{ /*Hover é o mouse/cursor*/
+    background-color:  #3a91d8;
+    
+}
